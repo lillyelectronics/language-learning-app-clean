@@ -13,7 +13,7 @@ export default function App() {
             <Stack.Navigator initialRouteName="Home">
                 <Stack.Screen name="Home" component={HomeScreen} />
                 <Stack.Screen name="TopicSelect" component={TopicSelect} />
-                <Stack.Screen name="Chat" component={ChatScreen} /> {/* 👈 Add this */}
+                <Stack.Screen name="Chat" component={ChatScreen} /> 
             </Stack.Navigator>
         </NavigationContainer>
     );
