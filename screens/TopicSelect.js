@@ -1,13 +1,16 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Button } from 'react-native';
 
-export default function TopicSelect() {
+export default function TopicSelect({ navigation }) {
     return (
         <View style={styles.container}>
             <Text style={styles.heading}>Choose a Topic</Text>
             <Text style={styles.topic}>🍽 Restaurant Conversation</Text>
             <Text style={styles.topic}>✈️ Airport Check-In</Text>
             <Text style={styles.topic}>💼 Job Interview</Text>
+
+            {/* 👇 Add a button to go to Chat screen */}
+            <Button title="Start Practice" onPress={() => navigation.navigate('Chat')} />
         </View>
     );
 }
